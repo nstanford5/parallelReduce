@@ -35,18 +35,18 @@ const [count] = parallelReduce([0])
 ```
 
 Here we declare one API member function `countUp` for the Bobs API on line 8, then define its functionality on lines 16-21
-Line 13 declares one loop variable `count` and initializes it to 0, declaring the parallelReduce
-Line 14 sets the invariant to true, this is useless except to simplify the demonstration
-Line 15 is a standard while loop condition, run until the condition breaks
-Line 16 is the definition of our api member function `countUp`
+- Line 13 declares one loop variable `count` and initializes it to 0, declaring the parallelReduce
+- Line 14 sets the invariant to true, this is useless except to simplify the demonstration
+- Line 15 is a standard while loop condition, run until the condition breaks
+- Line 16 is the definition of our api member function `countUp`
 API.functionName
 Takes zero arguments
-Line 17 starts a return
+- Line 17 starts a return
 0 is in the pay expression. This function takes no payment from the user. You can specify any number to be paid by the user here. You can also omit the 0 and Reach will synthesize this to zero.
 ret is the return function to return the function signature value to the caller. Here we have said that the return value is a UInt on line 8. More information on this below
-Line 18 adds 1 to the current count and stores that in newCount
-Line 19 invokes that return function and returns the newCount
-Line 20 updates the `count` loop variable to `newCount`
+- Line 18 adds 1 to the current count and stores that in newCount
+- Line 19 invokes that return function and returns the newCount
+- Line 20 updates the `count` loop variable to `newCount`
 
 ### .api_
 All API member functions must rely only on consensus state and the function inputs.
